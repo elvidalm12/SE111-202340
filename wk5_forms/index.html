@@ -22,7 +22,188 @@
             <td>Labels</td>
             <td>Form Fields</td>
         </thead>
+        
     </table>
+    <tbody>
+        <tr><!--table row-->
+            <!--left column-->
+            <td>
+                <label for="Parent/Gaurdian"> Parent/Gaurdian:</label>
+            </td>
 
+            <!--right column-->
+            <td>
+                <input type="text" name="gfirst" id="gfirst" placeholder="First Name"> <br>
+                <input type="text" name="glast" id="glast" placeholder="Last Name">
+            </td>
+
+        </tr>
+        <tr><!--table row-->
+            <!--left column-->
+            <td>
+                <label for="cfirst"> Childs Name:</label>
+            </td>
+
+            <!--right column-->
+            <td>
+                <input type="text" name="cfirst" id="cfirst" placeholder="Child's First Name"> <br>
+            </td>
+
+        </tr>
+
+        <tr><!--table row-->
+            <!--left column-->
+            <td>
+                <label for="age"> Childs Age:</label>
+            </td>
+
+            <!--right column-->
+            <td>
+                <input type="number" name="age" id="age" value="3">
+            </td>
+
+        </tr>
+
+        <tr><!--table row-->
+            <!--left column-->
+            <td>
+                <h3><label for="datetime"> Date and Time:</label></h3>
+            </td>
+
+            <!--right column-->
+            <td>
+            
+            </td>
+            </tr><tr>
+                <!--left column-->
+                <td>
+                    <label for="date"> Date:</label>
+                </td>
+                <!--right column-->
+                <td>
+                    <input type="date" name="date" id="date">
+                </td>
+
+                </tr><tr>
+                    <!--left column-->
+                    <td>
+                        <label for="time"> Time:</label>
+                    </td>
+                    <!--right column-->
+                    <td>
+                        <input type="time" name="time" id="time">
+                    </td>
+                    </tr><tr><!--table row-->
+                        <!--left column-->
+                        <td>
+                            <label for="guests"> Number of Guests:</label>
+                        </td>
+        
+                        <!--right column-->
+                        <td>
+                            <input type="number" name="guests" value="5" placeholder="guests">
+
+                            </td></tr><tr><!--table row-->
+                                <!--left column-->
+                                <td>
+                                    <h3><label for="food"> Food:</label></h3>
+
+                                    </td><td>
+
+                                    </td>
+                
+                                </tr><tr><!--table row-->
+                                    <!--left column[labels]-->
+                                    <td>
+                                        <label for="size"> Size:</label>
+                                    </td>
+                    
+                                    <!--right column-->
+                                    <td>
+                                        <input type="radio" name="size" value="sm" id="size">SM
+                                        <input type="radio" name="size" value="md" id="size">MD
+                                        <input type="radio" name="size" value="lg" id="size">LG
+                                    </td>
+                    
+                                </tr>
+                                <tr>
+                                    <!--left column-->
+                                    <td>
+                                        <label for="drinks"> Drinks</label>
+                                    </td>
+                                    <!--right column-->
+                                    <td>
+                                        <input type="checkbox" name="drink1" checked="true" value="coke">Coke <br>
+                                        <input type="checkbox" name="drink2" value="sprite"> Sprite <br>
+                                        <input type="checkbox" name="drink3" value="fruit punch"> Fruit Punch <br>
+                                        <input type="checkbox" name="drink4" value="lemonade"> Lemonade <br>
+                                        <input type="checkbox" name="drink5" value="iced tead"> Iced Tea <br>
+                                    </td>
+                
+                
+                                </tr>
+                                <!--left column-->
+            <tr><td>
+                <label for="cake"> Cake:</label>
+            </td>
+
+            <!--right column-->
+            <td>
+                <select name="cake" id="cake"><!--creates dropdown for choice-->
+                    <option value="chocolate">Chocolate</option>
+                    <option value="vanilla">Vanilla</option>
+                    <option value="illbringmyown">I'll Bring My Own</option>
+                </select>
+
+
+            </td>
+            </tr><tr><!--table row-->
+                <!--left column-->
+                <td>
+                    <h4><label for="decorations"> Decorations:</label></h4>
+                    </td><td>
+                    </td>
+
+
+        </tr>
+        <!--left column-->
+        <tr><td>
+            <label for="colors"> Color Scheme:</label>
+        </td>
+
+        <!--right column-->
+        <td>
+            <input type="color" name="colors" id="colors" input="">
+        </td>
+        </tr><tr><!--table row-->
+            <!--left column-->
+        
+            <td>
+                <label for="comments"> Additional Comments:</label>
+            </td>
+
+            <!--right column-->
+            <td>
+                <textarea type="comments" id="comments" rows="10" cols="20" placeholder="Please add additional comments" max="" length="100" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif"></textarea>
+            </td>
+
+        </tr>
+        <tr><!--table row-->
+            
+        </tr><tr>
+        </tr>
+        
+        <tr>
+            <td>
+                <!--right-->
+            </td>
+
+            <td>
+                <!--right-->
+                <input type="submit" value="Submit">
+            </td>
+        </tr>
+
+    </tbody>
 </body>
 </html>
