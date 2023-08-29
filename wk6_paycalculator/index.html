@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Week 6 | JavaScript Pay Calculator</title>
+</head>
+<body>
+    <h1>WK#6 | JavaScript Pay Calculator</h1>
+    <script>
+
+        // prompts user to enter hourly pay
+        var hrlyPay = prompt("Enter your hourly pay: ")
+        var hrsWorked = prompt("Enter your hours worked biweekly:")
+
+        // calculates gross pay, taxes, and net pay
+        var grossPay =  hrlyPay * hrsWorked
+        var taxRate = 0.2
+        var samShare =  grossPay * taxRate
+        var netPay = grossPay - samShare
+
+        // formats calculated values to 2 decimal places
+        var grossPayForm = grossPay.toFixed(2)
+        var samShareForm = samShare.toFixed(2)
+        var netPayForm = netPay.toFixed(2)
+
+        // displays the results using alert and console.log
+        alert("Gross Pay: ${grossPayForm} \nUncle Sam's Share: ${samShareForm} \nNet Pay: ${netPayForm}")
+        console.log("Gross Pay: ${grossPayForm} ")
+        console.log("Uncle Sam's Share: ${samShareForm} ")
+        console.log("Net Pay: ${netPayForm} ")
+
+    </script>
+
+    
+</body>
+</html>
