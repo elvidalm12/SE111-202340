@@ -11,8 +11,8 @@
     <script>
 
         // prompts user to enter hourly pay
-        var hrlyPay = prompt("Enter your hourly pay: ")
-        var hrsWorked = prompt("Enter your hours worked biweekly:")
+        var hrlyPay = Number(prompt("Enter your hourly pay: "))
+        var hrsWorked = Number(prompt("Enter your hours worked biweekly:"))
 
         // calculates gross pay, taxes, and net pay
         var grossPay =  hrlyPay * hrsWorked
