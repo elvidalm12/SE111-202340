@@ -10,23 +10,25 @@
     <h1>WK#6 | JavaScript Pay Calculator</h1>
     <script>
 
-        // prompts user to enter hourly pay
+        // used to collect the user's hourly pay and hours worked
         var hrlyPay = Number(prompt("Enter your hourly pay: "))
         var hrsWorked = Number(prompt("Enter your hours worked biweekly:"))
 
-        // calculates gross pay, taxes, and net pay
+        // calculates the gross pay, uncle Sam's share, and net pay based on the tax rate 20%
         var grossPay =  hrlyPay * hrsWorked
         var taxRate = 0.2
         var samShare =  grossPay * taxRate
         var netPay = grossPay - samShare
 
-        // formats calculated values to 2 decimal places
+        // used to format the calculated values to 2 decimal places
         var grossPayForm = grossPay.toFixed(2)
         var samShareForm = samShare.toFixed(2)
         var netPayForm = netPay.toFixed(2)
 
-        // displays the results using alert and console.log
+        // used to show the formatted results in a pop-up alert box
         alert(`Gross Pay: ${grossPayForm} \nUncle Sam's Share: ${samShareForm} \nNet Pay: ${netPayForm}`)
+        
+        // used to print the results to the browser's console
         console.log(`Gross Pay: ${grossPayForm}`)
         console.log(`Uncle Sam's Share: ${samShareForm}`)
         console.log(`Net Pay: ${netPayForm}`)
