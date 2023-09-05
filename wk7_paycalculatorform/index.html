@@ -122,7 +122,7 @@
             console.log("Net Pay: " + "$" + netPay.toFixed(2))
 
             //create a new variable called 'finalMessage' that holds the literal string value of the following, each value on a new line (use <br>): full name, hours worked*, hourly rate*   *--> rounded to the second decimal place 
-            var finalMessage = `Name: ${full} Hours: ${hours.toFixed(2)} Rate: ${rate.toFixed(2)} }`
+            var finalMessage = `Name: ${full}\n Hours: ${hours.toFixed(2)}\n Rate: ${rate.toFixed(2)} }`
 
         
             //create a new var called 'info' and store the entire #info *HTML element* to it
@@ -149,7 +149,7 @@
                 /*NOTE FOR TESTING:
                     *if written correctly, you will see an alert() with all info entered as well as processed!*/
 
-                alert(`${full}\nHOURS: ${hours}\nRATE: $${rate.toFixed(2)}\n\nGROSS PAY: $${gross.toFixed(2)}\nTAX AMOUNT: $${taxAmount.toFixed(2)}\nNET PAY: $${net.toFixed(2)}`)
+                alert(`${full}\nHOURS: ${hours}\nRATE: $${rate.toFixed(2)}\n\nGROSS PAY: $${grossPay.toFixed(2)}\nTAX AMOUNT: $${taxAmount.toFixed(2)}\nNET PAY: $${netPay.toFixed(2)}`)
             }
             
         }
