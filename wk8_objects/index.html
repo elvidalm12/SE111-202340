@@ -44,15 +44,15 @@
 		var fname = document.getElementById('fname')
 		var lname = document.getElementById('lname')
 		var outputDiv = document.getElementById('output')
-
+		
 		// Store the button element in a variable
-		var submitButton = document.getElementById("button");
-
+		var submitButton = document.getElementById('button')
+		
 		//Make an array to store the people
 		var people = []
 
 		//Make the button clickable. When clicked it calls the calcAndDisplay function.
-		submit.addEventListener('click', calcAndDisplay)
+		submitButton.addEventListener('click', calcAndDisplay)
 		
 		/*-----------------------------------------------------
 		Will add objects into the people array. 
@@ -75,9 +75,6 @@
 			//Add the following properties:
 			    //1. first: will be a string that uses the first Input's value
 				//2. last: will be a string that uses the last Input's value
-			//Store the elements (tags) in variables
-			//var fname = document.getElementById('fname')
-			//var lname = document.getElementById('lname')
 
             var person = {
 				first: first.value,
@@ -119,7 +116,7 @@
 					//FIRST: Ivan
 					//LAST: Drago
 					output += `${key.toUpperCase()}: ${people[i][key]}<br>`
-
+					
                 }
                 //add a <hr> to the output at the end of this outer loop so a horizontal rule is displayed in between each person being displayed to the screen.
 				output += `<hr>`
