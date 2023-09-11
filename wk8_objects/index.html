@@ -50,7 +50,7 @@
 		var people = []
 
 		//Make the button clickable. When clicked it calls the calcAndDisplay function.
-		document.querySelector('#button').addEventListener('click', calcAndDisplay)
+		submit.addEventListener('click', calcAndDisplay)
 		
 		/*-----------------------------------------------------
 		Will add objects into the people array. 
@@ -114,7 +114,7 @@
 					//FIRST: Ivan
 					//LAST: Drago
 					output += `${key.toUpperCase()}: ${people[i][key]}<br>`
-					
+
                 }
                 //add a <hr> to the output at the end of this outer loop so a horizontal rule is displayed in between each person being displayed to the screen.
 				output += `<hr>`
