@@ -39,7 +39,18 @@
 
 <!--The script tag should go after the HMTL, but inside of the body.-->
 <!--JavaScript cannot find tags, if they are not parsed before the script runs-->
-<script>
+<script>		
+		//Store the elements (tags) in variables
+		var fname = document.getElementById('fname')
+		var lname = document.getElementById('lname')
+		var outputDiv = document.getElementById('output')
+
+		// Store the button element in a variable
+		var submitButton = document.getElementById("button");
+
+		//Make an array to store the people
+		var people = []
+
 		//Make the button clickable. When clicked it calls the calcAndDisplay function.
 		submit.addEventListener('click', calcAndDisplay)
 		
@@ -67,11 +78,6 @@
 			//Store the elements (tags) in variables
 			var fname = document.getElementById('fname')
 			var lname = document.getElementById('lname')
-			var submit = document.getElementById('button')
-			var outputDiv = document.getElementById('output')
-
-			//Make an array to store the people
-			var people = []
 
             var person = {
 				first: first.value,
