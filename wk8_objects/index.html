@@ -40,20 +40,19 @@
 <!--The script tag should go after the HMTL, but inside of the body.-->
 <!--JavaScript cannot find tags, if they are not parsed before the script runs-->
     <!-- JavaScript script -->
+    <!-- JavaScript script -->
 <script>
 	// Store the elements (tags) in variables
 	var firstNameInput = document.getElementById("first");
 	var lastNameInput = document.getElementById("last");
 	var outputDiv = document.getElementById("output");
-	
-	// Array to store people objects
-	var people = [];
+	var people = []; // Array to store people objects
 
 	// Event listener for form submission
 	document.getElementById("personForm").addEventListener("submit", function (e) {
-        e.preventDefault(); // Prevent form submission
-        calcAndDisplay(); // Call the function to handle the submission
-    });
+		e.preventDefault(); // Prevent form submission
+		calcAndDisplay(); // Call the function to handle the submission
+	});
 
 	// Function to add a person to the people array, sort them, and display them
 	function calcAndDisplay() {
@@ -98,8 +97,8 @@
 		outputDiv.innerHTML = output;
 
 		// Clear the input fields after submission
-		firstNameInput = "";
-		lastNameInput = "";
+		firstNameInput.value = "";
+		lastNameInput.value = "";
 	}
 </script>
 </div>
