@@ -45,10 +45,18 @@
 	var firstNameInput = document.getElementById("first");
 	var lastNameInput = document.getElementById("last");
 	var outputDiv = document.getElementById("output");
-	var people = []; // Array to store people objects
+	
+	// Array to store people objects
+	var people = [];
+
+	// Event listener for form submission
+	document.getElementById("personForm").addEventListener("submit", function (e) {
+        e.preventDefault(); // Prevent form submission
+        calcAndDisplay(); // Call the function to handle the submission
+    });
 
 	// Function to add a person to the people array, sort them, and display them
-	function calcAndDisplay(e) {
+	function calcAndDisplay() {
 		// Create an object called person.
 		// Add the following properties:
 		// 1. first: a string that uses the first Input's value
