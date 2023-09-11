@@ -39,16 +39,7 @@
 
 <!--The script tag should go after the HMTL, but inside of the body.-->
 <!--JavaScript cannot find tags, if they are not parsed before the script runs-->
-<script>		
-		//Store the elements (tags) in variables
-		var fname = document.getElementById('fname')
-		var lname = document.getElementById('lname')
-		var submit = document.getElementById('button')
-		var outputDiv = document.getElementById('output')
-
-		//Make an array to store the people
-		var people = []
-
+<script>
 		//Make the button clickable. When clicked it calls the calcAndDisplay function.
 		submit.addEventListener('click', calcAndDisplay)
 		
@@ -73,6 +64,14 @@
 			//Add the following properties:
 			    //1. first: will be a string that uses the first Input's value
 				//2. last: will be a string that uses the last Input's value
+			//Store the elements (tags) in variables
+			var fname = document.getElementById('fname')
+			var lname = document.getElementById('lname')
+			var submit = document.getElementById('button')
+			var outputDiv = document.getElementById('output')
+
+			//Make an array to store the people
+			var people = []
 
             var person = {
 				first: first.value,
