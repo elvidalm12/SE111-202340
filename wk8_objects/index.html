@@ -41,16 +41,16 @@
 <!--JavaScript cannot find tags, if they are not parsed before the script runs-->
 <script>		
 		//Store the elements (tags) in variables
-		var fname = document.getElementById("fname")
-		var lname = document.getElementById("lname")
-		var submit = document.getElementById("button")
-		var outputDiv = document.getElementById("output")
+		var fname = document.getElementById('fname')
+		var lname = document.getElementById('lname')
+		var submit = document.getElementById('button')
+		var outputDiv = document.getElementById('output')
 
 		//Make an array to store the people
 		var people = []
 
 		//Make the button clickable. When clicked it calls the calcAndDisplay function.
-		document.querySelector("#button").addEventListener("click", calcAndDisplay)
+		document.querySelector('#button').addEventListener('click', calcAndDisplay)
 		
 		/*-----------------------------------------------------
 		Will add objects into the people array. 
@@ -113,10 +113,10 @@
 					//Output will resemble:
 					//FIRST: Ivan
 					//LAST: Drago
-					output += "${key.toUpperCase()}: ${people[i][key]}<br>"
+					output += '${key.toUpperCase()}: ${people[i][key]}<br>';
                 }
                 //add a <hr> to the output at the end of this outer loop so a horizontal rule is displayed in between each person being displayed to the screen.
-				output += "<hr>"
+				output += '<hr>';
 
 			}//end of loop going through people array to edit 'output'
 
