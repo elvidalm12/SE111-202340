@@ -51,7 +51,7 @@
 		var people = []
 
 		//Make the button clickable. When clicked it calls the calcAndDisplay function.
-		document.querySelector(`#button`).addEventListener(`click`, calcAndDisplay)
+		
 		
 		/*-----------------------------------------------------
 		Will add objects into the people array. 
@@ -76,8 +76,8 @@
 				//2. last: will be a string that uses the last Input's value
 
             var person = {
-				first: first.value,
-				last: last.value
+				first: fname,
+				last: lname
 
             }//end of person object
 
@@ -122,6 +122,7 @@
 			}//end of loop going through people array to edit 'output'
 
 				//log the output string
+				console.log(output);
 				//replace the outputDiv's inner HTML with the output string
 				outputDiv.innerHTML = output
 		}
