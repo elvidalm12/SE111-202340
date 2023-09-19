@@ -29,11 +29,9 @@
 
     // Loop through the array of objects
     for (var i = 0; i < people.length; i++) {
-    // Declare a local variable called tempDiv
-    var tempDiv;
 
     // Create a new div using document.createElement() and store it in tempDiv
-    tempDiv = document.createElement("div");
+    var tempDiv = document.createElement("div");
 
     // Apply an id to each div using the incrementor as the id
     tempDiv.setAttribute("id", String(i));
@@ -44,16 +42,16 @@
     // Use a for/in loop within the for loop to add each property of the object into the div
     for (var prop in people[i]) {
     // Create a <p> element for each property in the object
-    var pTag = document.createElement("p");
+    var p = document.createElement("p");
 
     // Create a textNode for each <p> and use the value of each property for the text
     var textNode = document.createTextNode(people[i][prop]);
 
     // Append the text node to the p tag
-    pTag.appendChild(textNode);
+    p.appendChild(textNode);
 
     // Append the <p> tag to the <div>
-    tempDiv.appendChild(pTag);
+    tempDiv.appendChild(p);
 }
 
     // Append the tempDiv to the body tag
