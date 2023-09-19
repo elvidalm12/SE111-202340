@@ -13,6 +13,7 @@
     
     
 <script type="text/javascript">
+    
      //Use this Array of objects to complete the assignment.
     var people =[
         {first:"Jason", last:"Vorhees", credit:"Friday the 13th"},
@@ -38,18 +39,19 @@
 
     // Use setAttribute() to give each div a class="border"
     tempDiv.setAttribute("class", "border");
-
+    
     // Use a for/in loop within the for loop to add each property of the object into the div
     for (var prop in people[i]) {
+    
     // Create a <p> element for each property in the object
     var p = document.createElement("p");
-
+    
     // Create a textNode for each <p> and use the value of each property for the text
     var textNode = document.createTextNode(people[i][prop]);
-
+    
     // Append the text node to the p tag
     p.appendChild(textNode);
-
+    
     // Append the <p> tag to the <div>
     tempDiv.appendChild(p);
 }
